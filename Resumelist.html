@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume Journey</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 20px;
+    }
+
+    .resume-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 per row */
+      gap: 20px;
+      margin: 30px auto;
+      max-width: 1200px;
+      padding: 20px;
+    }
+
+    .resume-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 100%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: left;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .resume-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .resume-card h3 {
+      margin: 0 0 10px;
+      color: #4CAF50;
+    }
+
+    .resume-card iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 8px;
+      border: none;
+      pointer-events: none; /* Prevent scrolling inside iframe */
+    }
+
+    .resume-card p {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Responsive (2 per row on tablets, 1 on mobile) */
+    @media (max-width: 900px) {
+      .resume-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .resume-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📄 My Resume Journey</h1>
+  </header>
+
+  <h2>All My Resumes</h2>
+  <p>Here you can explore my resumes created from 1st year till now, with short descriptions.</p>
+
+  <div class="resume-container">
+
+    <!-- Resume 1 -->
+    <div class="resume-card" onclick="window.open('https://drive.google.com/file/d/1_AJa9QTsdxN_f6jSwyzbyosqS9l3QIvo/view', '_blank')">
+      <h3>1st Interview Resume</h3>
+      <iframe src="https://drive.google.com/file/d/1_AJa9QTsdxN_f6jSwyzbyosqS9l3QIvo/preview"></iframe>
+      <p>My first resume created for an interview.</p>
+    </div>
+
+    <!-- Resume 2 -->
+    <div class="resume-card" onclick="window.open('https://drive.google.com/file/d/1aEP01jUZ6egj8ayo-wCbKs_riHxtLEkt/view', '_blank')">
+      <h3>Cognizant Resume</h3>
+      <iframe src="https://drive.google.com/file/d/1aEP01jUZ6egj8ayo-wCbKs_riHxtLEkt/preview"></iframe>
+      <p>Prepared specifically for Cognizant recruitment.</p>
+    </div>
+
+    <!-- Resume 3 -->
+    <div class="resume-card" onclick="window.open('https://drive.google.com/file/d/1_4OKMCukRJC4CMzW04Fa-olXIes0W0MM/view', '_blank')">
+      <h3>Word Resume</h3>
+      <iframe src="https://drive.google.com/file/d/1_4OKMCukRJC4CMzW04Fa-olXIes0W0MM/preview"></iframe>
+      <p>Created a Word document resume.</p>
+    </div>
+
+    <!-- Resume 4 -->
+    <div class="resume-card" onclick="window.open('https://drive.google.com/file/d/10tr3AnJI6uR0ElaRlnUp93WTOiqMv_J7/view', '_blank')">
+      <h3>HOD Referred Resume</h3>
+      <iframe src="https://drive.google.com/file/d/10tr3AnJI6uR0ElaRlnUp93WTOiqMv_J7/preview"></iframe>
+      <p>Resume shared through my Head of Department.</p>
+    </div>
+
+    <!-- Resume 5 -->
+    <div class="resume-card" onclick="window.open('https://drive.google.com/file/d/1CHHwRqchCzl1hxVk-NTuC2BeHRIQ5jmt/view', '_blank')">
+      <h3>Table Format Resume</h3>
+      <iframe src="https://drive.google.com/file/d/1CHHwRqchCzl1hxVk-NTuC2BeHRIQ5jmt/preview"></iframe>
+      <p>Resume prepared in tabular format.</p>
+    </div>
+
+    <!-- Resume 6 -->
+    <div class="resume-card" onclick="window.open('https://drive.google.com/file/d/1s6u5xZu3tLlw599icaWVOBdLXZzGZRYe/view', '_blank')">
+      <h3>Sasi Referred Resume</h3>
+      <iframe src="https://drive.google.com/file/d/1s6u5xZu3tLlw599icaWVOBdLXZzGZRYe/preview"></iframe>
+      <p>Referred version shared via Sasi.</p>
+    </div>
+
+    <!-- Resume 7 -->
+    <div class="resume-card" onclick="window.open('https://drive.google.com/file/d/11vqapJ9GaksJChoX8ShowjwsBsqFp3jD/view', '_blank')">
+      <h3>Profile Pic Resume</h3>
+      <iframe src="https://drive.google.com/file/d/11vqapJ9GaksJChoX8ShowjwsBsqFp3jD/preview"></iframe>
+      <p>Resume including my profile photo.</p>
+    </div>
+
+    <!-- Resume 8 -->
+    <div class="resume-card" onclick="window.open('https://drive.google.com/file/d/1fd-BSoN6Sae7l_wQbR0C9L4OCE4LMwGT/view', '_blank')">
+      <h3>Portfolio Resume</h3>
+      <iframe src="https://drive.google.com/file/d/1fd-BSoN6Sae7l_wQbR0C9L4OCE4LMwGT/preview"></iframe>
+      <p>Resume tailored for portfolio showcasing.</p>
+    </div>
+
+    <!-- Resume 9 -->
+    <div class="resume-card" onclick="window.open('https://drive.google.com/file/d/1fd-BSoN6Sae7l_wQbR0C9L4OCE4LMwGT/view', '_blank')">
+      <h3>Template Resume</h3>
+      <iframe src="https://drive.google.com/file/d/1fd-BSoN6Sae7l_wQbR0C9L4OCE4LMwGT/preview"></iframe>
+      <p>Resume created using a template format.</p>
+    </div>
+
+  </div>
+</body>
+</html>
